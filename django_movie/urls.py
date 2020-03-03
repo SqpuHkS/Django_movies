@@ -16,12 +16,12 @@ Including another URLconf
 from . import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from movies.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', MoviesView.as_view(), name="movies_list_url"),
+    path('', include('movies.urls'))
 ]
 
 if settings.DEBUG:

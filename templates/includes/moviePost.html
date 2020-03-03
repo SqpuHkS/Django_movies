@@ -1,0 +1,21 @@
+{% load static %}
+
+<link rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/movie_post.css' %}">
+
+<div class="poster">
+    <span class="image">
+        <img src="{{ movie.poster }}" height="215" width="140">
+    </span>
+    <span class="title">
+        <span class="name">
+            {{ movie.title }}
+        </span>
+        <span class="information">
+            <a class="link" href="{{ movie.get_absolute_url }}">
+                Information
+            </a>
+        </span>
+    </span>
+</div>

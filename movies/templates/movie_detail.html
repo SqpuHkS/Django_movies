@@ -1,0 +1,26 @@
+{% extends 'base_template.html' %}
+{% load static %}
+
+{% block title %}
+    Detail
+{% endblock %}
+
+{% block content %}
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <h1 class="detail_title">
+                        Movie "{{ movie.title }}"
+                    </h1>
+                    <h4 class="detail_tagline">
+                        {{ movie.tagline }}
+                    </h4>
+                </div>
+            <div class="col-8">
+                    <span class="detail_image">
+                        <img src="{{ movie.poster }}" >
+                    </span>
+                </div>
+            </div>
+        </div>
+{% endblock %}

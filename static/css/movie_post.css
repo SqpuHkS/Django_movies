@@ -1,0 +1,16 @@
+.poster{
+    width: 140px;
+    height: 263px;
+    margin-right: 28px;
+    margin-bottom: 42px;
+}
+
+.link{
+    font-family: sans-serif;
+    font-size: 95%;
+    color: #c30003;
+}
+
+.name{
+    font-weight: bold;
+}
